@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Form Đơn Giản Phần</title>
+</head>
+<body>
+<div >
+    <style>
+        .form{
+            background-color: #fffda9;
+            margin: auto;
+            width: 60%;
+            border: 1px solid #73AD21;
+            padding: 5px;
+
+        }
+        td, th {
+            border: 0px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        .ST{
+            color: red;
+            text-align: center;
+        }
+        .fone1{
+            color: blue;
+
+        }
+    </style>
+    <form action="Taofrom_sothich.html" method="get">
+        <table class="form">
+            <tr>
+                <th colspan="4" CLASS="ST" style="background-color: #ff4c00; color: beige">SỞ THÍCH CỦA BẠN</th>
+            </tr>
+            <tr>
+                <td class="fone1">Họ và tên</td>
+                <td colspan="3">
+                    <input type="text" name="yourname" size="30px" >
+                </td>
+                <!--<td>&nbsp;</td>
+                <td>&nbsp;</td>-->
+            </tr>
+            <tr>
+                <td class="fone1">Email</td>
+                <td colspan="3">
+                    <input type="email" name="email" size="30px" >
+                    <!--<td>&nbsp;</td>
+                    <td>&nbsp;</td>-->
+            </tr>
+
+            <tr>
+                <td class="fone1">Sở thích</td>
+                <td>
+                    <input type="checkbox" name="st"><span style="color: red">Thể thao</span>
+                </td>
+                <td><input type="checkbox" name="st"><span style="color: red">Âm nhạc</span></td>
+                <td><input type="checkbox" name="st"><span style="color: red">Đọc sách</span></td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="checkbox" name="st"><span style="color: red">Lướt game</span>
+                </td>
+                <td><input type="checkbox" name="st"><span style="color: red">Chơi game</span></td>
+                <td><input type="checkbox" name="st"><span style="color: red">Điện ảnh</span></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" name="SubmitForm" value="Gửi thông tin"></td>
+                <td><input type="reset" name="ResetForm" value="Nhập lại"></td>
+                <td>&nbsp;</td>
+            </tr>
+
+
+        </table>
+    </form>
+    <form action="Taoform_dangky.html" method="get">
+        <table class="form">
+            <tr>
+                <th colspan="3" CLASS="fone1" style="background-color: #d4fdd6">ĐĂNG KÝ HỌC VIÊN</th>
+            </tr>
+            <tr>
+                <td class="fone1">Họ và tên</td>
+                <td colspan="2">
+                    <input type="text" name="yourname" size="30px" >
+                </td>
+                <!--<td>&nbsp;</td>
+                <td>&nbsp;</td>-->
+            </tr>
+            <tr>
+                <td class="fone1">Ngày sinh</td>
+                <td colspan="2">
+                    <input type="date" name="email" size="30px" >
+            </tr>
+
+            <tr>
+                <td class="fone1">Giới tính</td>
+                <td>
+                    <input type="radio" name="gt"><span style="color: black">Nam</span>
+                    <input type="radio" name="gt"><span style="color: black">Nữ</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="fone1">Địa chỉ</td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="fone1">Lớp</td>
+                <td colspan="2">
+                    <select name="class">
+                        <option value="" name="" >--chọn lớp--</option>
+                        <option value="html-css" name="htmlcss">html-css</option>
+                        <option value="php" name="php">PHP cơ bản đến nâng cao</option>
+                        <option value="javascript" name="java">JavaScript</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="fone1">Email</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td class="fone1">Điện thoại</td>
+                <td>
+                    <input type="number" name="phone">
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" name="SubmitForm" value="Gửi thông tin">
+                    <input type="reset" name="ResetForm" value="Nhập lại">
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+</div>
+</body>
+</html>
