@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra nam nhuan</title>
+</head>
+<body>
+<form>
+    <input type="text" name="" id="user" placeholder="Nhap user name">
+    <input type="button" value="Kiemtra" id="submit" onclick="vailidate()">
+    <p id="result" style="color: blue"></p>
+
+    <script>
+        function vailidate() {
+            let user = document.getElementById('user').value;
+            if(user == 'Admin'){
+                let pass = prompt('vui long nhap mat khau');
+                if (pass == 'TheMaster'){
+                    alert('Welcome');
+                }else if (pass == null){
+                    alert('Canceled');
+                }else {
+                    alert('Wrong password.');
+                }
+            }else if (user ==null){
+                alert('Cancaed');
+            }else{
+                alert('I don’t know you');
+            }
+        }
+    </script>
+</form>
+</body>
+</html>

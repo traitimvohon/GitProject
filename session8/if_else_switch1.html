@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen IF va Switch</title>
+</head>
+<body>
+<input type="text" name="" id="browser" placeholder="Input Browser">
+<input type="button" value="Kiemtra" id="submit" onclick="vailidate()">
+<p id="result" style="color: blue"></p>
+<script>
+    function vailidate() {
+//switch
+        let browser = document.getElementById('browser').value;
+        switch (browser) {
+            case 'Edge':
+                document.getElementById('result').innerHTML = 'Youve got the Edge!';
+                break;
+            case 'Chrome':
+            case 'Firefox':
+            case 'Safari':
+            case 'Opera':
+                document.getElementById('result').innerHTML='Okay we support these browsers too';
+                break;
+            default:
+                document.getElementById('result').innerHTML='We hope that this page looks ok!';
+        }
+    }
+</script>
+</body>
+</html>

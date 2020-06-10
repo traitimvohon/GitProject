@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra nam nhuan</title>
+</head>
+<body>
+<form>
+    <input type="number" name="" id="nam">
+    <input type="button" value="Kiemtra" id="submit" onclick="vailidate()">
+    <p id="result" style="color: blue"></p>
+
+<script>
+    function vailidate() {
+            let a = document.getElementById('nam').value;
+            if (a%4 == 0){
+                if (a%100 == 0){
+                    if (a%400 == 0){
+                        document.getElementById('result').innerHTML ='nam ' + a + ' la nam nhuan';
+                    }else{
+                        document.getElementById('result').innerHTML = 'nam '+a+' khong la nam nhuan';
+                    }
+                }else{
+                    document.getElementById('result').innerHTML = 'nam '+a+' la nam nhuan';
+                }
+            }else {
+                document.getElementById('result').innerHTML = 'nam '+a+' khong la nam nhuan';
+            }
+    }
+</script>
+</form>
+</body>
+</html>

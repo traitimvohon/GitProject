@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhap vao cau tra loi</title>
+</head>
+<body>
+<p>What is the “official” name of JavaScript?</p>
+    <form>
+        <input type="text" id="ansew">
+        <input type="button" value="Kiemtra" id="test" onclick="vailidate()">
+        <p id="result" style="color: blue"></p>
+        <script>
+            function vailidate() {
+                let a = document.getElementById('ansew').value;
+                if (a =='ECMAScript'){
+                    alert('Right!');
+                }else {
+                    alert('Didn’t know? ECMAScript!”');
+                }
+
+            }
+        </script>
+    </form>
+</body>
+</html>
