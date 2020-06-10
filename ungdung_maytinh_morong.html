@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung Dung May Tinh Mo Rong</title>
+</head>
+<body>
+<style>
+    table {
+
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 200px;
+        margin: auto;
+    }
+    td {
+        width: 50px;
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+    th{
+        width: 50px;
+        border: 1px solid #dddddd;
+        text-align: right;
+    }
+</style>
+<form name="calculator">
+<table>
+    <tr style="width: 200px">
+        <td colspan="4" id="display">
+            <input type="text" name="display" disabled>
+        </td>><!--"Hàng này sẽ chỉ hiển thị kết quả chứ không được edit nên sẽ có thuộc tính disabled trong thẻ input.-->
+
+    </tr>
+    <tr>
+        <td><input type="button" id="seven" value="(" onclick="display.value +=')'"></td>
+        <td><input type="button" id="seven" value=")" onclick="display.value +=')'"></td>
+        <td><input type="button" id="seven" value="%" onclick="display.value +='%'"></td>
+        <td><input type="button" id="seven" value="AC" onclick="display.value += ''"></td>
+    </tr>
+    <tr>
+        <td><input type="button" id="seven" value="7" onclick="display.value +=7"></td>
+        <td>8</td>
+        <td>9</td>
+        <td>/</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>x</td>
+    </tr>
+    <tr>
+        <td><input type="button" id="one" value="1" onclick="calculator.display.value += 1"></td>
+        <td>2</td>
+        <td>3</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>.</td>
+        <td>=</td>
+        <td>+</td>
+    </tr>
+    <script>
+        function display1() {
+            let a = document.getElementById("one").value;
+            document.getElementById("display").innerHTML = a;
+        }
+        function display7() {
+                let a = document.getElementById("seven").value;
+                document.getElementById("display").innerHTML = a;
+        }
+    </script>
+</table>
+</form>
+</body>
+</html>

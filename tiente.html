@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label>Amount</label><br>
+    <input id="amount" type="text" name="sotien"/><br><br>
+
+    <label>From Currency</label><br>
+    <select id="FCurrency">
+        <option value="VN">Viet nam</option>
+        <option value="USD">USD</option>
+    </select><br><br>
+
+    <label>To Currency</label><br>
+    <select id="TCurrency">
+        <option value="VN">Viet nam</option>
+        <option value="USD">USD</option>
+    </select><br><br>
+    <button type="button" name=submit" value="convert" onclick="validateForm()">Convert</button>
+</form>
+<p id="output"></p>
+<script>
+    function validateForm() {
+        let amount = document.getElementById("amount").value; //khai bao 
+        let first = document.getElementById("FCurrency").value;
+        let last = document.getElementById("TCurrency").value;
+        if(first === "VN"){
+            if(last ==="VN"){
+                document.getElementById("output").innerHTML = amount;
+            } else if(last === "USD"){
+                let changeA = amount/23000;
+                document.getElementById("output").innerHTML = changeA;
+            }
+        }
+
+        if (first === "USD"){
+            if(last === "USD"){
+                document.getElementById("output").innerHTML = amount;
+            }else if(last === "VN"){
+                let changeB = amount*23000;
+                document.getElementById("output").innerHTML = changeB;
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

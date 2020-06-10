@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<form>
+    <input type="number" value="" id="number1">
+    <input type="number" value="" id="number2"><br>
+    <button type="button" value="Add" onclick="validateadd()">Addition(+)</button>
+    <button type="button" value="Sub" onclick="validatesub()">Subtration(-)</button>
+    <button type="button" value="Mul" onclick="validatemul()">Multiplication(X)</button>
+    <button type="button" value="Div" onclick="validatediv()">Division(/)</button>
+    <p id="result"></p>
+    <script>
+
+        function validateadd() {
+            let a = parseFloat(document.getElementById("number1").value);
+            let b = parseFloat(document.getElementById("number2").value);
+            let c = a + b;
+            document.getElementById("result").innerHTML = 'Result Addition = '+c;
+        }
+        function validatesub() {
+            let a = parseFloat(document.getElementById("number1").value);
+            let b = parseFloat(document.getElementById("number2").value);
+            let c = a - b;
+            document.getElementById("result").innerHTML = 'Result Subtration = '+c;
+        }
+        function validatemul() {
+            let a = parseFloat(document.getElementById("number1").value);
+            let b = parseFloat(document.getElementById("number2").value);
+            let c = a * b;
+            document.getElementById("result").innerHTML = 'Result Multiplication = '+c;
+        }
+        function validatediv() {
+            let a = parseFloat(document.getElementById("number1").value);
+            let b = parseFloat(document.getElementById("number2").value);
+            let c = a / b;
+            document.getElementById("result").innerHTML = 'Result Division = '+c;
+        }
+    </script>
+</form>
+</body>
+</html>

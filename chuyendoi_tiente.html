@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi tien te></title>
+</head>
+<body>
+<form method="get" action="chuyendoi_tiente.html">
+    <input type="number" name="money" value="" id="money">
+    <select id="f_money">
+        <option name="" value="vnd-form">Viet Nam</option>
+        <option name="" value="usd-form">Do La My</option>
+    </select>
+
+    <select id="t_money">
+        <option name="" value="vnd-to">Viet Nam</option>
+        <option name="" value="usd-to">Do La My</option>
+    </select>
+    <button type="button" id="convert" value="Convert" onclick="validateForm()">test</button>
+    <p id="output" style="color: blue"></p>
+    <script>
+        function validateForm() {
+            let a = document.getElementById("money").value;
+            let b = document.getElementById("f_money").value;
+            let c = document.getElementById("t_money").value;
+            let d = 23000*a;
+            let e = a/23000;
+            if (b ==="usd-form"){
+                if(c === "vnd-to"){
+                    document.getElementById("output").innerHTML = 'Result : '+d+' VND';
+                }else {
+                    document.getElementById("output").innerHTML ='Result : '+a+' USD';
+                }
+            }else{
+                if(c === "vnd-to"){
+                    document.getElementById("output").innerHTML = 'Result : '+a+' VND';
+                }else {
+                    document.getElementById("output").innerHTML = 'Result : '+e+' USD';
+                }
+            }
+
+        }
+    </script>
+</form>
+</body>
+</html>
