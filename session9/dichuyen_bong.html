@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Di chuyen bong</title>
+</head>
+<body>
+<style>
+    #content{}
+</style>
+<div id="content">
+    <img id="myImage" src="../img/bong.png" height="542" width="560" />
+    <p>Click button</p>
+    <button type="button" value="CLick" onclick="movefootball()">Click Me</button>
+</div>
+<script>
+    let imgOjm = null;
+    function init() {
+            imgOjm = document.getElementById('myImage');
+            imgOjm.style.position = 'relative';
+            imgOjm.style.left = 200 +'px';
+    }
+    window.onload = init();
+    function movefootball() {
+            imgOjm.style.left = parseInt(imgOjm.style.left) + 15 +'px';
+    }
+</script>
+</body>
+</html>
