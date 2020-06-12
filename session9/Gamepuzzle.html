@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Games</title>
-</head>
 <body>
+            <table border="1">
+                <tr>
+                    <td><img src="../img/1.JPG" id="im1" onClick="imageClicked1()" /></td>
 
+                </tr>
+                <tr>
+                    <td><img src="../img/4.JPG" id="im4" onClick="imageClicked()" /></td>
+                    <td><img src="../img/5.JPG" id="im5" onClick="imageClicked()" /></td>
+                    <td><img src="../img/6.JPG" id="im6" onClick="imageClicked()" /></td>
+            </table>
+<script>
+    function imageClicked1(){
+        let anh1 = document.getElementById('im1').src;
+        //test
+        alert(anh1);
+        }
+
+</script>
 </body>
 </html>

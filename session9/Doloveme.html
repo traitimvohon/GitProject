@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoYouLoveMe</title>
+</head>
+<body>
+<p>Do You Love Me</p>
+<input type="button" value="yes" id="Y" onclick="clicky()">
+<input type="button" value="no" id="N" onmouseover="clickn()" style="left: 50px; top: 50px; position: absolute">
+<script>
+    function clicky(){
+        let love = document.getElementById('Y');
+        alert('<3');
+    }
+    function clickn() {
+        let trai = window.innerWidth;
+        let tren = window.innerHeight;
+        alert('Chon nham roi ban?');
+        document.getElementById('N').style.top = tren*Math.random()+'px';
+        document.getElementById('N').style.left= trai*Math.random()+'px';
+    }
+
+</script>
+</body>
+</html>
