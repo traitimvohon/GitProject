@@ -2,24 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Games</title>
+    <title>Game Puzzle</title>
+</head>
 <body>
-            <table border="1">
-                <tr>
-                    <td><img src="../img/1.JPG" id="im1" onClick="imageClicked1()" /></td>
-
-                </tr>
-                <tr>
-                    <td><img src="../img/4.JPG" id="im4" onClick="imageClicked()" /></td>
-                    <td><img src="../img/5.JPG" id="im5" onClick="imageClicked()" /></td>
-                    <td><img src="../img/6.JPG" id="im6" onClick="imageClicked()" /></td>
-            </table>
+<img id = "pic1" onclick="changeImage1();check()" src="../img/1.JPG">
+<img id = "pic2" onclick="changeImage2();check()" src="../img/2.JPG">
+<br>
+<img id = "pic3" onclick="changeImage3();check()" src="../img/3.JPG">
+<img id = "pic4" onclick="changeImage4();check()" src="../img/4.JPG">
 <script>
-    function imageClicked1(){
-        let anh1 = document.getElementById('im1').src;
-        //test
-        alert(anh1);
+    let img1 = document.getElementById('pic1');
+    let img2 = document.getElementById('pic2');
+    let img4 = document.getElementById('pic4');
+    let img3 = document.getElementById('pic3');
+    function changeImage1() {
+        if (img1.src.match('1')) {
+            img1.src = '../img/5.JPG';
+        } else if (img1.src.match('5')) {
+            img1.src = '../img/6.JPG';
+        } else if (img1.src.match("6")) {
+            img1.src = '../img/1.JPG';
         }
+    }
+    function changeImage2() {
+        if (img2.src.match('2')) {
+            img2.src = '../img/5.JPG';
+        } else if (img2.src.match('5')) {
+            img2.src = '../img/6.JPG';
+        } else if (img2.src.match("6")) {
+            img2.src = '../img/2.JPG';
+        }
+    }function changeImage3() {
+        if (img3.src.match('3')) {
+            img3.src = '../img/5.JPG';
+        } else if (img3.src.match('5')) {
+            img3.src = '../img/6.JPG';
+        } else if (img3.src.match("6")) {
+            img3.src = '../img/3.JPG';
+        }
+    }function changeImage4() {
+        if (img4.src.match('4')) {
+            img4.src = '../img/5.JPG';
+        } else if (img4.src.match('5')) {
+            img4.src = '../img/6.JPG';
+        } else if (img4.src.match("6")) {
+            img4.src = '../img/4.JPG';
+        }
+    }
 
 </script>
 </body>
