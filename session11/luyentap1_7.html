@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In so tu 1-100</title>
+</head>
+<body>
+<script>
+    /*
+    Hãy viết một chương trình in ra các số từ 1 đến 100.
+    Nhưng nếu số chia hết cho 3 thì in ra "Fizz",
+    5 thì in ra "Buzz" thay vì in ra số đó.
+    Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".
+
+    */
+    let text="";
+    for (i=1;i<=100;i++){
+      text =(i % 15 ==0)?'FizzBuzz':(i%3 == 0)?'Fizz':(i%5==0)?'Buzz':i ;
+      document.write(text+"<br>");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So nguyen to</title>
+</head>
+<body>
+
+<script>
+
+    function isPrime(value) {
+        if (Math.sqrt(value) % 1 == 0)
+        return true;
+        return false;
+    }
+    function display(quantily){
+        let count = 0;//dem so luong phan tu
+        let value = 1;// kiem tra ;
+        while (value<quantily){
+            if (isPrime(value) == true){
+                count++;
+                document.write(value+"");
+            }
+            value++;
+        }
+    }
+    display(10);
+</script>
+</body>
+</html>
