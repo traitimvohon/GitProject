@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #content{
+            margin: 0 auto;
+            width: 405px;
+            background-color:#bef8f7;
+            height: 500px;
+        }
+        body{
+            background-color: #cccccc;
+        }
+        .diem{
+            margin: 0 auto;
+            width: 80px;
+            height: 30px;
+        }
+    </style>
+</head>
+<script src="game.js" type="text/javascript" charset="utf-8" async defer></script>
+<body >
+    <div class="diem">
+        <p id="diemso">Điểm Số: 0 </p>
+    </div>
+    <div id="content">
+        <canvas id="game" width="405" height="500"></canvas>
+        <button value="" onclick = "draw()">BẮT ĐẦU</button>
+        
+    </div>
+</body>
+</html>
