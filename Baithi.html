@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai thi</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<script>
+    //bai 1
+    function finMax(arr) {
+        let max = arr[0];
+        for (let i = 0; i<arr.length;i++){
+            if (arr[i]>max){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+    //bai 2
+     function tryRemoveFromArray(x,arr) {
+        let count = 0;
+        let newArr=[];
+        for (i=0; i<arr.length;i++){
+            if (x ==a[i]) {
+                newArr = arr[i];
+                count++;
+            }
+        }
+        if (count >=1){
+            return newArr;
+        }else{
+            return arr;
+        }
+     }
+     // bai 3
+    function isFibonacci(x) {
+        if ( x < 0){
+            return false;
+        }else if( x ==1 || x == 2){
+            return true;
+        }else {
+            for (i = 3 ; i<=x;i++){
+                let number1 = i-1;
+                let number2 = i-2;
+                let sum = number1 + number2;
+                if (x == sum){
+                    return true;
+                }else {
+                    return false;
+                }
+            }
+        }
+    }
+    // bai 4
+    function Circle(x,y,radius,color){
+        this.radius = radius;
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.render = function () {
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            context.beginPath();
+            context.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            context.fillStyle =this.color;
+            context.fill();
+            context.closePath();
+        }
+    };
+    let circle = new Circle(10,10,100,'#00000');
+    circle.render();
+</script>
+</body>
+</html>
